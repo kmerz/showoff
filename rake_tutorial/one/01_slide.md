@@ -3,14 +3,14 @@
 * A simple ruby build program with capabilities similar to make.
 
 !SLIDE bullets incremental
-# or 1000 times invented wheel #
+# or 1000 times reinvented wheel #
 * Author: Jim Weirich
 * Project page: http://rubyforge.org/projects/rake
 
 !SLIDE bullets incremental
 # Why rake? #
 * it comes with a ruby package..
-* ..or is easy installed with gem..
+* ..or is is easily installed with gem..
 * ..and is widely used
 
 !SLIDE bullets incremental
@@ -43,10 +43,10 @@
 !SLIDE  veel-code
 # save it to a file #
 	@@@ ruby
- 	desc "Check synatx of foo"
+ 	desc "Check syntax of foo"
 	task :syntax do
 	  begin
-	    sh 'ruby -c -w -W2 foo.rb > foo.synatx'
+	    sh 'ruby -c -w -W2 foo.rb > foo.syntax'
 	  rescue
 	    puts "Error: #{$!}"
 	    exit 1
